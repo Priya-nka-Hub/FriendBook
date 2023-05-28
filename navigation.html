@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Navigation - Facebook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: poppins, sans-serif;
+        }
+
+        body {
+            background: #f0f0f0;
+            color: #000;
+
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fff;
+            box-shadow: #d0d1d1;
+            padding: 0px 20px;
+            top: 0;
+            position: fixed;
+
+        }
+
+        nav .left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav .left .search-box {
+
+            background: #f0f0f0;
+            border-radius: 30px;
+            padding: 12px 20px;
+            margin-left: 10px;
+
+        }
+
+        nav .left .search-box i {
+            margin: 2px 5px;
+
+
+        }
+
+        nav .left .search-box input {
+            background: transparent;
+            border: none;
+            outline: 0;
+            font-size: 14px;
+
+        }
+
+        nav .left img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        nav .right img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        nav .center {
+
+            margin-right: 10%;
+        }
+
+        nav .center i {
+        
+            background: none;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            margin-left: 8px;
+            margin: 8px 20px;
+            padding: 5px 20px;
+            position: relative;
+            font-size: 22px;
+            align-items: center;
+        }
+
+        nav .center .fas:hover {
+            background: #efefef;
+            color: #1f43f8;
+        }
+
+        nav .right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        nav .right i {
+            padding: 6px 7px;
+            margin: 2px 8px;
+            border: none;
+            background: #f0f0f0;
+            border-radius: 50%;
+        }
+
+        .main {
+            display: flex;
+            margin-top: 70px;
+        }
+
+        .main .left-side::-webkit-scrollbar {
+            width: 7px;
+            ;
+        }
+            
+        
+        /* Handle */
+        .main .left-side::-webkit-scrollbar-thumb {
+            border-radius: 20px;
+            background: #f0f0f0;
+        }
+        
+        /* Handle on hover */
+        .main .left-side:hover::-webkit-scrollbar-thumb {
+            background: #cfcccc;
+        }
+        
+
+        .left-side {
+            padding: 15px 0;
+            width: 330px;
+            height: 92vh;
+            overflow: hidden;
+            overflow-y: scroll;
+            position: fixed;
+            margin-left: 1%;
+
+
+        }
+
+        .left-menu {
+            display: flex;
+            width: 330px;
+            height: 50px;
+            align-items: center;
+        }
+
+        .left-menu:hover {
+            background: #dddddd;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .left-side .left-menu img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 0 15px;
+        }
+
+        hr {
+            margin-top: 6px;
+            color: #c2c0c0;
+        }
+
+        .shortcut {
+            width: 280px;
+            margin: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .shortcut a {
+            text-decoration: none;
+            margin-right: 5px;
+            padding: 4px;
+            color: #1f43f8;
+            font-size: 15px;
+            position: relative;
+            cursor: pointer;
+
+
+        }
+
+        .shortcut a:hover {
+            background: #dcdbdb;
+
+
+        }
+
+
+        .shortcut h3 {
+            font-size: 20px;
+            color: #696767;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <img src="images/logo.jpg" class="logo">
+                <form class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search here......">
+                </form>
+            </div>
+
+            <div class="center">
+                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-tv"></i>
+                <i class="fa-solid fa-store"></i>
+                <i class="fa-solid fa-users"></i>
+                <i class="fa-solid fa-gamepad"></i>
+
+            </div>
+
+            <div class="right">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <i class="fa-solid fa-bell"></i>
+                <img src="images/profile.jpg" alt="">
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="main">
+        <div class="left-side">
+            <div class="left-menu">
+                <img src="images/profile.jpg" class="left-profilepic">
+                <p>Priyanka Kumari</p>
+
+            </div>
+            <div class="left-menu">
+                <img src="images/friends.png" alt="">
+                <p>Friend</p>
+
+            </div>
+
+            <div class="left-menu">
+                <img src="images/memories.png" alt="">
+                <p>Feed (most recent)</p>
+
+            </div>
+
+            <div class="left-menu">
+                <img src="images/market place.png" alt="">
+                <p>Marketplaces</p>
+
+            </div>
+
+            <div class="left-menu">
+                <img src="images/group-icon.jpg" alt="">
+                <p>Groups</p>
+
+            </div>
+
+            <div class="left-menu">
+                <img src="images/watch.png" alt="">
+                <p>Watch</p>
+
+            </div>
+
+            <div class="left-menu">
+                <img src="images/see more.png" alt="">
+                <p>see more</p>
+
+            </div>
+
+            <hr>
+
+            <div class="left-bottom"></div>
+            <div class="shortcut">
+                <h3>Your shortcuts</h3>
+                <a href="#">Edit</a>
+            </div>
+
+            <div class="left-menu">
+                <img src="images/candy.png" alt="">
+                <p>Candy Crush Saga</p>
+
+            </div>
+
+            <div class="left-menu">
+                <img src="images/group-icon.jpg" alt="">
+                <p>Groups</p>
+
+            </div>
+
+            <div class="left-menu">
+                <img src="images/watch.png" alt="">
+                <p>Watch</p>
+
+            </div>
+
+
+            <div class="left-menu">
+                <img src="images/market place.png" alt="">
+                <p>Marketplaces</p>
+
+            </div>
+
+            <div class="left-menu">
+                <img src="images/group-icon.jpg" alt="">
+                <p>Groups</p>
+
+            </div>
+
+            <div class="left-menu">
+                <img src="images/see more.png" alt="">
+                <p>see more</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="center-side">
+
+    </div>
+
+
+
+
+
+
+    <div class="right-side">
+
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>
